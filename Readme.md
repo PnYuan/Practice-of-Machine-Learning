@@ -7,7 +7,7 @@ for more info, welcome to my blog: [Yuan's Homepage](https://py131.github.io) or
 
 ## List ##
 
-- **code**; implementation practice of **BP network** based on **PyBrain**.([python code](./code/test_pybrain_bp/))
+- **code**; implementation of standard **BP algorithm**.([python code here](./code/BP_implement/)). 
+- **code**; implementation practice of **BP network** based on **PyBrain**.([python code here](./code/test_pybrain_bp/))
 - **note**; parameter learning of **Bayesian Network**(BN). 
-
 
