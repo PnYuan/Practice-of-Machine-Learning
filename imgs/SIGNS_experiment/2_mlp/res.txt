@@ -1,2 +1,3 @@
 Train Accuracy: 1.0
 Test Accuracy: 0.891667
+time cost of training: 359 seconds
