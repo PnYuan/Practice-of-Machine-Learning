@@ -64,7 +64,7 @@ sess.run(init)
 
 for i in range(1000):  # iterate  for 100 times
     batch_xs, batch_ys = mnist.train.next_batch(100)  # using mini-batch
-    sess.run(train_step, feed_dict={x: X_train_org, y_: Y_train_org})
+    sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
     
 #========== Evaluation ==========#
 correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))  # use argmax() for decoding one-hot
