@@ -220,11 +220,11 @@ if __name__ == "__main__":
         batch_xs, batch_ys = mnist.train.next_batch(minibatch_size, shuffle = True)  # using mini-batch
         _ , minibatch_cost = sess.run([optimizer, cost], feed_dict={X: batch_xs.transpose(), Y: batch_ys.transpose(),  keep_prob: keep_1})
     
-        if(i % 20 == 0):  # wirte logs
+        if(i % 20 == 0):  # write logs
             result = sess.run(merged, feed_dict={X: X_train, Y: Y_train, keep_prob: keep_2})
             writer.add_summary(result, i)
 
-        if(i % 100 == 0):  # print taining process
+        if(i % 100 == 0):  # print training process
             print("iteration %d training minibatch_cost %f" % (i, minibatch_cost))
 
     end = time.time()
