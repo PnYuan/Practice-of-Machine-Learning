@@ -7,6 +7,7 @@ for more info, welcome to my blog: [Yuan's Homepage](https://py131.github.io) or
 
 ## List ##
 
+- **code**; **MNIST** experiments based on **Softmax, MLP, CNN** using **Tensorflow**.([python code here](./code/MNIST_tensorflow_demo/)).
 - **code**; ensemble learning experiment based on **RF**(Random Forest) and **GBDT**(Gradient Boosting Decision Tree) using **sklearn**.([python code here](./code/RF_GBDT_test/)).
 - **code**; **MNIST** experiment based on **CNN** (Convolutional Neural Networks) using **Theano**.([python code here](./code/Mnist_CNN/)).
 - **code**; **MNIST** experiment based on **MLP** (Multilayer Perceptron) using **Theano**.([python code here](./code/Mnist_MLP/)). 
