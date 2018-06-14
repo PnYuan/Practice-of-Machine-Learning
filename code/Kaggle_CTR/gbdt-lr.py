@@ -244,7 +244,6 @@ plt.show()
 param['min_samples_leaf'] = 10
 '''
 
-''''
 ## fitting
 gbdt_model.fit(X_train_gbdt, y_train_gbdt)
 
@@ -259,7 +258,6 @@ print('log loss of GBDT on valid set: %.5f' % log_loss_gbdt)
 
 ## store the pre-trained gbdt_model
 pickle.dump(gbdt_model, open(fp_gbdt_model, 'wb'))
-'''
 
 del X_train_gbdt
 del y_train_gbdt
@@ -272,7 +270,6 @@ for i in range(1, gbdt_model.get_params()['n_estimators']+1):
     id_cols.append('tree'+str(i))
 oh_enc = OneHotEncoder(id_cols)
 
-'''
 def chunker(seq, size):
     return (seq[pos: pos + size] for pos in range(0, len(seq), size))
 
@@ -283,12 +280,11 @@ for chunk in chunker(df_train_id, 50000):
     oh_enc.fit(chunk)
     
 del df_train_id
-'''
+
 del X_train_org
 del y_train_org
 gc.collect()
 
-'''
 ## oh_enc fit the test_set
 df_test_f = pd.read_csv(fp_test_f, 
                         index_col=None,  dtype={'id':str}, 
@@ -306,14 +302,12 @@ for chunk in df_test_f:
 
 ## store the encoder
 pickle.dump(oh_enc, open(fp_oh_enc_gbdt, 'wb'))
-'''
 
 oh_enc = pickle.load(open(fp_oh_enc_gbdt, 'rb'))
 
 #---- LR model -----#
 lr_model = SGDClassifier(loss='log')  # using log-loss for LogisticRegression
 
-'''
 ## input data (one-hot encoding)
 df_X_train_lr_id = pd.DataFrame(gbdt_model.apply(X_train_lr)[:, :, 0], columns=id_cols, dtype=np.int8)
 df_X_train_lr_id['click'] = y_train_lr
@@ -354,7 +348,6 @@ print('log loss of LR on valid set: %.5f' % log_loss_lr)
 
 ## store the pre-trained model
 pickle.dump(lr_model, open(fp_lr_model, 'wb'))
-'''
 
 lr_model = pickle.load(open(fp_lr_model, 'rb'))
 ##==================== Prediction ====================##
