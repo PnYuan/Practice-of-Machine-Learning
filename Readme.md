@@ -7,6 +7,7 @@ for more info, welcome to my blog: [Yuan's Homepage](https://pnyuan.github.io) o
 
 ## List ##
 
+- **code**; **Kaggle-Avazu-CTR-Prediction** experiments based on **LR、GBDT、GBDT-LR** using **sklearn** and **FM、FFM** using **xlearn**.([python code here](./code/Kaggle_CTR/)).
 - **code**; **Kaggle-Titanic** experiments based on **Decision Tree** using **sklearn**.([python code here](./code/Kaggle_Titanic/)).
 - **code**; **MNIST** experiments based on **Softmax, MLP, CNN** using **Tensorflow**.([python code here](./code/MNIST_tensorflow_demo/)).
 - **code**; ensemble learning experiment based on **RF**(Random Forest) and **GBDT**(Gradient Boosting Decision Tree) using **sklearn**.([python code here](./code/RF_GBDT_test/)).
@@ -15,4 +16,3 @@ for more info, welcome to my blog: [Yuan's Homepage](https://pnyuan.github.io) o
 - **code**; implementation of standard **BP algorithm**.([python code here](./code/BP_implement/)). 
 - **code**; implementation practice of **BP network** based on **PyBrain**.([python code here](./code/test_pybrain_bp/))
 - **note**; parameter learning of **Bayesian Network**(BN). 
-
